@@ -228,3 +228,9 @@ img {
     padding-top: 0;
   }
 }
+@media screen and (max-width: 400px) {
+  .purchase-info .vendeur-pro {
+    display: flex;
+    margin: 0 auto;
+  }
+}
