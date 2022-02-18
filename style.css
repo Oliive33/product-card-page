@@ -31,7 +31,7 @@ body {
   margin: 30px;
 }
 .card-wrapper {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 img {
@@ -97,34 +97,41 @@ img {
   margin-bottom: 0.5rem;
   background: #90111c;
   color: #fff;
-  padding: 3px 0.3rem;
+  padding: 5px 0.3rem;
   transition: all 0.5s ease;
 }
 .product-link:hover {
   opacity: 0.9;
 }
-.product-rating {
-  color: #ffc107;
+.btn-vendeur .btn-vendeurs {
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.45rem 0.8rem;
+  border: none;
+  outline: 0;
+  margin: 1.5rem 0;
 }
-.product-rating span {
-  font-weight: 600;
-  color: #252525;
+.contact-vendeur {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.45rem 0.8rem;
+  margin: 1.5rem 0;
+  transition: all 0.2s ease-in-out;
 }
-.product-price {
-  margin: 1rem 0;
-  font-size: 1rem;
-  font-weight: 700;
+.contact-vendeur:hover {
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.2s ease-in-out;
 }
-.product-price span {
-  font-weight: 400;
+.btn-vendeur .btn-vendeurs {
+  background: black;
+  color: #fff;
 }
-.last-price span {
-  color: #f64749;
-  text-decoration: line-through;
-}
-.new-price span {
-  color: #256eff;
-}
+
 .product-detail h2 {
   text-transform: capitalize;
   color: #12263a;
@@ -156,8 +163,8 @@ img {
 .purchase-info {
   margin: 1.5rem 0;
 }
-.purchase-info input,
-.purchase-info .btn {
+
+.purchase-info .btn-cart {
   border-radius: 25px;
   text-align: center;
   padding: 0.45rem 0.8rem;
@@ -165,48 +172,20 @@ img {
   outline: 0;
   margin-right: 0.2rem;
   margin-bottom: 1rem;
+  background: #90111c;
 }
-.purchase-info input {
-  width: 60px;
-}
-.purchase-info .btn {
+.purchase-info .btn-cart {
   cursor: pointer;
   color: #fff;
 }
-.purchase-info .btn:first-of-type {
+
+.purchase-info .btn {
   background: #90111c;
-}
-.purchase-info .btn:last-of-type {
-  background: #eabeb0;
   font-weight: 700;
 }
 .purchase-info .btn:hover {
   opacity: 0.9;
 }
-.social-links {
-  display: flex;
-  align-items: center;
-}
-.social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  color: #000;
-  border: 1px solid #000;
-  margin: 0 0.2rem;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 0.8rem;
-  transition: all 0.5s ease;
-}
-.social-links a:hover {
-  background: #000;
-  border-color: transparent;
-  color: #fff;
-}
-
 @media screen and (min-width: 992px) {
   .card {
     display: grid;
@@ -228,9 +207,11 @@ img {
     padding-top: 0;
   }
 }
-@media screen and (max-width: 400px) {
-  .purchase-info .vendeur-pro {
-    display: flex;
-    margin: 0 auto;
+@media screen and (max-width: 350px) {
+  .btn-vendeur .btn-vendeurs {
+    margin: 0.8rem 0 0.3rem 0;
+  }
+  .contact-vendeur {
+    margin: 0.8rem 0;
   }
 }
